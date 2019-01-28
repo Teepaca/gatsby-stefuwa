@@ -43,8 +43,8 @@ const oldHero = styled.div`
 `
 const Hero = styled.header`
   background-color: ${props => props.theme.colors.greyLight};
-  display: flex;
-  align-items: center;
+  grid-column: 2;
+  padding: 3rem 2rem 6rem 2rem;
 `
 const HeroInner = styled(Wrapper)`
   padding-top: 13rem;
@@ -81,12 +81,14 @@ const IndexPage = ({
     <Wrapper>
       <Hero>
         <HeroInner>
-          <h1>Hi.</h1>
           <HeroText>
+          <h1>Hi.</h1>
             <p>
-              I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
-              React apps with the best UX users can get.
+              I&apos;m Steph Tong, a Computer Engineering student who clearly has trouble with CSS. 
             </p>
+            <h5>
+              Send help
+            </h5>
           </HeroText>
           {/* <Link to="/contact">
             <Button big>
