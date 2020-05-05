@@ -1,43 +1,32 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { darken, lighten } from 'polished'
 
-const Wrapper = styled.header`
-  background: linear-gradient(
-    45deg,
-    ${props => darken(0.1, props.theme.colors.primary)},
-    ${props => lighten(0.1, props.theme.colors.primary)}
-  );
-  grid-column: 1 / -1;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding: 2rem 2rem 5rem 2rem;
-  box-shadow: inset 0px -10px 30px 0px rgba(0, 0, 0, 0.1);
-`
-
-const Content = styled.div`
-  max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
-
-  a {
-    color: ${props => props.theme.colors.white};
-    font-size: 1.2rem;
-    &:hover {
-      opacity: 0.85;
-      color: ${props => props.theme.colors.white};
-    }
-  }
-`
-
-const Header = ({ children }) => (
-  <Wrapper>
-    <Content>{children}</Content>
-  </Wrapper>
+const Header = (props) => (
+    <header id="header" style={props.timeout ? {display: 'none'} : {}}>
+        <div className="logo">
+            <span className="icon fa-diamond"></span>
+        </div>
+        <div className="content">
+            <div className="inner">
+                <h1>Dimension</h1>
+                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
+                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 )
 
-export default Header
-
 Header.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
+    onOpenArticle: PropTypes.func,
+    timeout: PropTypes.bool
 }
+
+export default Header
