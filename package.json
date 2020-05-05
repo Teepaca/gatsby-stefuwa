@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "gatsby": "^2.0.76",
+    "gatsby": "^2.21.13",
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
@@ -13,6 +13,9 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.1"
+  },
+  "engines": {
+    "node": ">=14.2.0"
   },
   "keywords": [
     "gatsby"
