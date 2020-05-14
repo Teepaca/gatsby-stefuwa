@@ -18,22 +18,24 @@
       'opacity #{_duration(article)} ease-in-out'
     )
   );
-  background-image: -moz-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: -webkit-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: -ms-radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
-  background-image: radial-gradient(
-    rgba(0, 0, 0, 0.25) 25%,
-    rgba(0, 0, 0, 0) 55%
-  );
+
+  // Dark circle radial gradient
+  // background-image: -moz-radial-gradient(
+  //   rgba(0, 0, 0, 0.25) 25%,
+  //   rgba(0, 0, 0, 0) 55%
+  // );
+  // background-image: -webkit-radial-gradient(
+  //   rgba(0, 0, 0, 0.25) 25%,
+  //   rgba(0, 0, 0, 0) 55%
+  // );
+  // background-image: -ms-radial-gradient(
+  //   rgba(0, 0, 0, 0.25) 25%,
+  //   rgba(0, 0, 0, 0) 55%
+  // );
+  // background-image: radial-gradient(
+  //   rgba(0, 0, 0, 0.25) 25%,
+  //   rgba(0, 0, 0, 0) 55%
+  // );
   max-width: 100%;
   text-align: center;
 
@@ -42,16 +44,17 @@
     position: relative;
     margin-top: 3.5rem;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
-      width: _size(border-width);
-      height: calc(3.5rem + 1px);
-      background: _palette(border);
-    }
+    // Vertical stick
+    // &:before {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   top: calc(-3.5rem - 1px);
+    //   left: calc(50% - #{_size(border-width) * 1});
+    //   width: _size(border-width);
+    //   height: calc(3.5rem + 1px);
+    //   background: _palette(border);
+    // }
   }
 
   > :first-child {
@@ -62,6 +65,7 @@
     }
   }
 
+  // Circle
   .logo {
     width: 5.5rem;
     height: 5.5rem;
@@ -69,6 +73,7 @@
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
 
+    // Diamond
     .icon {
       &:before {
         font-size: 2rem;

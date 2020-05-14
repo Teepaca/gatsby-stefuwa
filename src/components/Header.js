@@ -4,17 +4,19 @@ import React from 'react'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon fa-paper-plane"></span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Stephanie Tong</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          {/* A fully responsive site template designed by{' '}
+          <a href="https://html5up.net">HTML5 UP</a> and released */}
+          An enthralling portfolio dropped off the shelf
+          <br/>
+          {/* for free under the{' '}
+          <a href="https://html5up.net/license">Creative Commons</a> license. */}
+          of a Montreal based computer engineering student 
         </p>
       </div>
     </div>
