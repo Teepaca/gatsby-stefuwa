@@ -22,13 +22,13 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        <li>
+      <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('about')
             }}
           >
-            Intro
+            About
           </button>
         </li>
         <li>
@@ -43,10 +43,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('album')
             }}
           >
-            About
+            Album
           </button>
         </li>
         <li>
